@@ -1,0 +1,41 @@
+{
+    "name": "demo-k6-with-grafana",
+    "version": "0.0.3",
+    "description": "Exemplo de arquiteturas para testes de performance usando o K6 com visualização no Grafana",
+    "main": "index.js",
+    "scripts": {
+      "k6": "k6 run --vus 10 --duration 30s ./src/requests/pigeon.request.js",
+      "k6-xj-kafka": "k6 run --vus 10 --duration 30s ./src/requests/journeyRealtime.request.js",
+
+      "docker:FullFlowSmoke": "docker-compose up -d influxdb grafana && webpack && docker-compose run k6 run /dist/FullFlowSmoke.test.js",
+      "docker:FullFlowLoad": "docker-compose up -d influxdb grafana && webpack && docker-compose run k6 run /dist/FullFlowLoad.test.js",
+      "docker:FullFlowSoak": "docker-compose up -d influxdb grafana && webpack && docker-compose run k6 run /dist/FullFlowSoak.test.js",
+      "docker:FullFlowSpike": "docker-compose up -d influxdb grafana && webpack && docker-compose run k6 run /dist/FullFlowSpike.test.js",
+      "docker:FullFlowStress": "docker-compose up -d influxdb grafana && webpack && docker-compose run k6 run /dist/FullFlowStress.test.js",
+
+      "docker:journeyStress": "docker-compose up -d influxdb grafana && webpack && docker-compose run k6 run /dist/journeyStress.test.js",
+
+      "docker:up": "docker-compose up -d influxdb grafana",
+      "docker:down": "docker-compose down -v"
+    },
+    "repository": {
+      "type": "git",
+      "url": ""
+    },
+    "author": "Tiago Oliveira",
+    "license": "ISC",
+    "devDependencies": {
+      "webpack-cli": "^4.8.0"
+    },
+    "dependencies": {
+      "@babel/core": "^7.15.0",
+      "@babel/preset-env": "^7.15.0",
+      "babel-loader": "^8.2.2",
+      "casual": "^1.6.2",
+      "core-js": "^3.16.3",
+      "faker": "^5.5.3",
+      "k6": "^0.0.0",
+      "webpack": "^5.51.1"
+    }
+  }
+  
