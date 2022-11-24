@@ -11,7 +11,7 @@ Projeto de arquitetura e esqueleto de testes de performance utilizando o K6.
 
 ## Execução
 
-### Execução simplificada dos testes subindo containers de Grafana e InfluxDB: 
+### ... simplificada dos testes subindo containers de Grafana e InfluxDB: 
 
 - Smoke test 
   -  ```npm run docker:FullFlowSmoke```
