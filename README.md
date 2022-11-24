@@ -2,35 +2,30 @@
 
 Projeto de arquitetura e esqueleto de testes de performance utilizando o K6.
 
-## Exemplos de execução 
-### Pré-requisitos: 
+## Instalação e Configuração
+
 - Instalação [**k6**](https://k6.io/docs/getting-started/installation/)
 - Instalação [**docker/docker-compose**](https://www.docker.com/get-started)
 
-### Sem docker, influxdb e grafana:
+- ```npm i```   
+### Execução simplificada dos testes subindo containers de Grafana e InfluxDB: 
+
+  -  ```docker:FullFlowSmoke```
+    ```docker:FullFlowLoad```
+    ```docker:FullFlowSoak```
+    ```docker:FullFlowSpike```
+    ```docker:FullFlowStress```
+### Execução sem Docker, Grafana e InfluxDB: 
 - Com npm:
   - ```npm run FullFlowLoadTest```    
 - Sem npm:
   - ```k6 run src/simulations/FullFlowLoad.test.js```
 
-### Com docker, influxdb e grafana:  
-- Com npm: 
-  - ```npm run docker:up```  
-  ```npm run docker:FullFlowLoad```  
+### Containers de Grafana e InfluxDB podem ser parados manualmente usando 
+  ```npm run docker:up```  
   ```npm run docker:down```  
   
-- Sem npm:
-  - ```docker-compose up -d influxdb grafana && docker-compose run k6 run -e env=PRD /src/simulations/FullFlowLoad.test.js```
-
-* Utilizando docker você pode acompanhar o grafana em tempo real acessando a url do [Dashboard do Grafana](http://localhost:3000/d/k6/k6-load-testing-results?orgId=1&refresh=5s)
-
-## Tecnologias utilizadas:  
-- [JS](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript) 
-- [npm](https://www.npmjs.com/)
-- [k6](https://k6.io/)
-- [docker](https://www.docker.com/get-started)
-- [Grafana](https://grafana.com/)
-- [Influxdb](https://github.com/influxdata/influxdb)
+* Os dashboards do Grafana ficam disponíveis [aqui](http://localhost:3000/d/k6/k6-load-testing-results?orgId=1&refresh=5s)
 
 ## Tipos de Testes de Performance apresentados nesse projeto:  
 - Smoke Test

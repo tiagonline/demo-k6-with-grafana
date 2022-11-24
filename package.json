@@ -1,6 +1,6 @@
 {
     "name": "demo-k6-with-grafana",
-    "version": "0.0.3",
+    "version": "1.0.0",
     "description": "Exemplo de arquiteturas para testes de performance usando o K6 com visualização no Grafana",
     "main": "index.js",
     "scripts": {
