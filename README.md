@@ -32,7 +32,7 @@ Projeto de arquitetura e esqueleto de testes de performance utilizando o K6.
 - [Grafana](https://grafana.com/)
 - [Influxdb](https://github.com/influxdata/influxdb)
 
-## Tipos de Testes de Performance:  
+## Tipos de Testes de Performance apresentados nesse projeto:  
 - Smoke Test
   - A idéia desse teste é verificar se nada quebrou toda vez que escrever um novo script ou modificar um script existente ou até mesmo se o sistema não gerou nenhum erro quando estiver sob carga mínima.
 ![Smoke Test](https://k6.io/docs/static/243effef66c366044cc692f439cfb9a3/448f2/smoke-test.png)
