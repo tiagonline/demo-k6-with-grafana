@@ -1,4 +1,4 @@
-<h1 align="center"> Projeto demo para exemplo de arquitetura para testes de performance utilizando o K6 + Grafana</h1>
+<h1 align="center">Demo de testes de performance utilizando o K6 + Grafana + InfluxDB</h1>
 
 Projeto de arquitetura e esqueleto de testes de performance utilizando o K6.
 
