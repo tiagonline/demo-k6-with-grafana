@@ -5,8 +5,7 @@ module.exports = {
       FullFlowLoad: './src/simulations/FullFlowLoad.test.js',
       FullFlowSoak: './src/simulations/FullFlowSoak.test.js',
       FullFlowSpike: './src/simulations/FullFlowSpike.test.js',
-      FullFlowStress: './src/simulations/FullFlowStress.test.js',
-      journeyStress: './src/simulations/journeyStress.test.js'
+      FullFlowStress: './src/simulations/FullFlowStress.test.js'
     },
     output: {
       path: __dirname + '/dist',

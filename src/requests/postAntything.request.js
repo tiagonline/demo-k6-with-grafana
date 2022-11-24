@@ -12,20 +12,20 @@ export default function () {
     let params = {
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': 'Bearer authenticationXewardsJourney'
+          'Authorization': 'Bearer xpto'
         },
       };
 
     let body = JSON.stringify({
-            consumerId: "3a9f62d45f54412fa69d59db42589f52",
-            profileId: "5e19ebdca498f6760aa11b6a",
+            consumerId: "",
+            profileId: "",
             customProperties: {
                 login: "postman",
-                data: "pwd123"
+                data: "12345"
             }
     })
   
-    let res = http.post(`https://api-hmg.bonuz.com/xewards-journey/journeyEvents/625daa73417fdfccb0befefe/send`, body, params);
+    let res = http.post(`https://`, body, params);
   
     check(res, {
       'status is 202': (r) => r.status === 202
