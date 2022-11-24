@@ -8,13 +8,22 @@ Projeto de arquitetura e esqueleto de testes de performance utilizando o K6.
 - Instalação [**docker/docker-compose**](https://www.docker.com/get-started)
 
 - ```npm i```   
+
+## Execução
+
 ### Execução simplificada dos testes subindo containers de Grafana e InfluxDB: 
 
-  -  ```docker:FullFlowSmoke```
-    ```docker:FullFlowLoad```
-    ```docker:FullFlowSoak```
-    ```docker:FullFlowSpike```
-    ```docker:FullFlowStress```
+## Smoke test 
+  -  ```npm run docker:FullFlowSmoke```
+## Load test 
+  -  ```npm run docker:FullFlowLoad```
+## Soak test 
+  -  ```npm run docker:FullFlowSoak```
+## Spike test 
+  -  ```npm run docker:FullFlowSpike```
+## Stress test 
+  -  ```npm run docker:FullFlowStress```
+
 ### Execução sem Docker, Grafana e InfluxDB: 
 - Com npm:
   - ```npm run FullFlowLoadTest```    
