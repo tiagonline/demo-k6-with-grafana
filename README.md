@@ -24,6 +24,8 @@ Projeto de arquitetura e esqueleto de testes de performance utilizando o K6.
 - Stress test 
   -  ```npm run docker:FullFlowStress```
 
+* Os dashboards do Grafana ficam disponíveis [aqui](http://localhost:3000/d/k6/k6-load-testing-results?orgId=1&refresh=5s)
+
 ### Execução sem Docker, Grafana e InfluxDB: 
 - Com npm:
   - ```npm run FullFlowLoadTest```    
@@ -33,8 +35,6 @@ Projeto de arquitetura e esqueleto de testes de performance utilizando o K6.
 ### Containers de Grafana e InfluxDB podem ser parados manualmente usando 
   ```npm run docker:up```  
   ```npm run docker:down```  
-  
-* Os dashboards do Grafana ficam disponíveis [aqui](http://localhost:3000/d/k6/k6-load-testing-results?orgId=1&refresh=5s)
 
 ## Tipos de Testes de Performance apresentados nesse projeto:  
 - Smoke Test
