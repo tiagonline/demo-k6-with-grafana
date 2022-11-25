@@ -1,7 +1,7 @@
 {
     "name": "demo-k6-with-grafana",
     "version": "1.0.0",
-    "description": "Exemplo de arquiteturas para testes de performance usando o K6 com visualização no Grafana",
+    "description": "Projetinho mostrando o funcionamento de testes de performance com K6 + Grafana + InfluxDB",
     "main": "index.js",
     "scripts": {
       "k6": "k6 run --vus 10 --duration 30s ./src/requests/getAnything.request.js", 
