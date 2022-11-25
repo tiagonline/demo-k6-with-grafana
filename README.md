@@ -4,8 +4,7 @@ Projeto de arquitetura e esqueleto de testes de performance utilizando o K6.
 
 ## Instalação e Configuração
 
-- Instalação [**k6**](https://k6.io/docs/getting-started/installation/)
-- Instalação [**docker/docker-compose**](https://www.docker.com/get-started)
+- Documentação do [**k6**](https://k6.io/docs/getting-started/installation/)
 
 - ```npm i```   
 
